@@ -1,4 +1,4 @@
-from kom_framework.utils.testrail.api_client import APIClient
+from .api_client import APIClient
 
 
 class TestCaseStatuses:

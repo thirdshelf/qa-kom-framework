@@ -1,9 +1,9 @@
 import os
 from datetime import datetime
 
-from kom_framework.src.general import Log
-from kom_framework.utils.testrail.api_client import APIError
-from kom_framework.utils.testrail.testrail_service import TestRailService, TestCaseStatuses
+from ...src.general import Log
+from .api_client import APIError
+from .testrail_service import TestRailService, TestCaseStatuses
 
 
 class TestRailHelper:

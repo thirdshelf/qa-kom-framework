@@ -3,10 +3,10 @@ import time
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.remote.webelement import WebElement
 
-from kom_framework.src.general import Log
-from kom_framework.src.support.driver_aware import DriverAware
-from kom_framework.src.web import http_request_wait_time
-from kom_framework import js_waiter_file
+from ..general import Log
+from ..support.driver_aware import DriverAware
+from ..web import http_request_wait_time
+from ... import js_waiter_file
 
 
 class JSElementMixin:

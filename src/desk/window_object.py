@@ -1,12 +1,12 @@
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.remote.webelement import WebElement
 
-from kom_framework.src.drivers.window_drivers import AppiumDriver
-from kom_framework.src.general import Log
-from kom_framework.src.mixins.actions import Actions
-from kom_framework.src.mixins.wait import WaitElementMixin
-from kom_framework.src.support.driver_aware import DriverAware
-from kom_framework.src.web import appium_platform
+from ..drivers.window_drivers import AppiumDriver
+from ..general import Log
+from ..mixins.actions import Actions
+from ..mixins.wait import WaitElementMixin
+from ..support.driver_aware import DriverAware
+from ..web import appium_platform
 
 
 class WindowObject(DriverAware):

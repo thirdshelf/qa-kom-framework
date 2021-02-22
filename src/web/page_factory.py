@@ -1,5 +1,5 @@
-from kom_framework.src.base_element import KOMElementBase
-from kom_framework.src.support.driver_aware import DriverAware
+from ..base_element import KOMElementBase
+from ..support.driver_aware import DriverAware
 
 
 class PageFactory:

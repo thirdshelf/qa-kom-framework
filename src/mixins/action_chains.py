@@ -1,6 +1,6 @@
-from kom_framework.src.base_element import KOMElementBase
-from kom_framework.src.general import Log
-from kom_framework.src.support.driver_aware import DriverAware
+from ..base_element import KOMElementBase
+from ..general import Log
+from ..support.driver_aware import DriverAware
 
 
 class ActionChainsMixin:

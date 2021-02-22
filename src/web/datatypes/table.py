@@ -1,12 +1,12 @@
 import time
 from typing import TypeVar, Generic, Callable, List
 
-from kom_framework.src.general import Log
-from kom_framework.src.support.locators import Locator
-from kom_framework.src.web.datatypes.element_types import Button
-from kom_framework.src.web.page_factory import PageFactory
-from kom_framework.src.web import element_load_time
-from kom_framework.src.web.datatypes.kom_element_list import KOMElementList
+from .. import element_load_time
+from .element_list_types import KOMElementList
+from ..page_factory import PageFactory
+from .element_types import Button
+from ...general import Log
+from ...support.locators import Locator
 
 T = TypeVar('T')
 

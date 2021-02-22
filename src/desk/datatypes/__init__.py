@@ -1,8 +1,8 @@
 from selenium.common.exceptions import TimeoutException
 
-from kom_framework.src.base_element import KOMElementBase
-from kom_framework.src.mixins.wait import WaitElementMixin
-from kom_framework.src.support.locators import Xpath
+from ...base_element import KOMElementBase
+from ...mixins.wait import WaitElementMixin
+from ...support.locators import Xpath
 
 
 class Button(KOMElementBase):

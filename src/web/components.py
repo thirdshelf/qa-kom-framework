@@ -2,9 +2,9 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.remote.webelement import WebElement
 
-from kom_framework.src.mixins.wait import WaitElementsMixin
-from kom_framework.src.support.driver_aware import DriverAware
-from kom_framework.src.web.page_factory import PageFactory
+from .page_factory import PageFactory
+from ..mixins.wait import WaitElementsMixin
+from ..support.driver_aware import DriverAware
 
 
 class Components(DriverAware):

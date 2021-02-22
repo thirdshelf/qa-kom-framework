@@ -1,4 +1,4 @@
-from kom_framework.src.web import appium_remote, appium_port, appium_cookies, appium_platform
+from ..web import appium_remote, appium_port, appium_cookies, appium_platform
 
 
 class AppiumForMac:

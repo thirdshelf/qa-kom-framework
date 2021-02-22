@@ -1,4 +1,4 @@
-from kom_framework import kom_config
+from ... import kom_config
 
 proxy_ip = kom_config['proxy_ip']
 proxy_port = kom_config['proxy_port']

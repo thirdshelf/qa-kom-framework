@@ -6,13 +6,13 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException,
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.expected_conditions import presence_of_element_located, element_to_be_clickable
 
-from kom_framework.src.base_element import KOMElementBase
-from kom_framework.src.general import Log
-from kom_framework.src.mixins.action_chains import ActionChainsMixin
-from kom_framework.src.mixins.javascript import JSElementMixin
-from kom_framework.src.mixins.wait import WaitElementMixin
-from kom_framework.src.web import retry_delay
-from kom_framework.src.web.datatypes.actions import Action
+from .actions import Action
+from .. import retry_delay
+from ...base_element import KOMElementBase
+from ...general import Log
+from ...mixins.action_chains import ActionChainsMixin
+from ...mixins.javascript import JSElementMixin
+from ...mixins.wait import WaitElementMixin
 
 
 class KOMElement(KOMElementBase):
