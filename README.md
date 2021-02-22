@@ -1,0 +1,1 @@
+# qa-kom-framework
