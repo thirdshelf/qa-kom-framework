@@ -1,19 +1,16 @@
-from ... import kom_config
+from ... import env_file_content
 
 # Selenium web driver configuration
-element_load_time = kom_config['element_load_time']
-iframe_load_time = kom_config['iframe_load_time']
-http_request_wait_time = kom_config['http_request_wait_time']
-page_load_time = kom_config['page_load_time']
-retry_delay = kom_config['retry_delay']
+element_load_time = env_file_content['element_load_time']
+iframe_load_time = env_file_content['iframe_load_time']
+http_request_wait_time = env_file_content['http_request_wait_time']
+page_load_time = env_file_content['page_load_time']
+retry_delay = env_file_content['retry_delay']
 
 # Selenium Hub configurations
-remote_execution = kom_config['web_driver_configurations']['remote_execution'] == "True"
-hub_ip = kom_config['web_driver_configurations']['hub_ip']
-hub_port = kom_config['web_driver_configurations']['hub_port']
+remote_execution = env_file_content['remote_execution'] == "True"
+hub_ip = env_file_content['hub_ip']
+hub_port = env_file_content['hub_port']
 
-# Appium configuration
-appium_platform = kom_config['appium_configurations']['platform']
-appium_remote = kom_config['appium_configurations']['remote']
-appium_port = kom_config['appium_configurations']['port']
-appium_cookies = kom_config['appium_configurations']['cookies']
+# Execution configurations
+multi_application_mode = env_file_content['multi_application_mode'] == "True"
