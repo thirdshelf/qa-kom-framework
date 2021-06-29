@@ -31,6 +31,7 @@ class Chrome:
         from webdriver_manager.chrome import ChromeDriverManager
         driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(),
                                   desired_capabilities=driver_capabilities)
+        driver.execute_script("Object.defineProperty(navigator, 'platform', {get: () => 'Mac'})")
         return driver
 
 
@@ -51,6 +52,7 @@ class FireFox:
             driver_capabilities.pop('enableVNC')
         driver = webdriver.Firefox(executable_path=GeckoDriverManager().install(),
                                    capabilities=driver_capabilities)
+        driver.execute_script("Object.defineProperty(navigator, 'platform', {get: () => 'Mac'})")
         return driver
 
 
@@ -67,6 +69,7 @@ class InternetExplorer:
         driver_capabilities = {**cls.get_capabilities(), **capabilities}
         driver = webdriver.Ie(executable_path=IEDriverManager(version="3.9.0", os_type="win32").install(),
                               capabilities=driver_capabilities)
+        driver.execute_script("Object.defineProperty(navigator, 'platform', {get: () => 'Mac'})")
         return driver
 
 
